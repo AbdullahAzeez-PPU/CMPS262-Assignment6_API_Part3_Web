@@ -12,7 +12,7 @@ formEl.addEventListener('submit', event => {
         window.alert("Error Message");
     }
     else {
-        fetch('https://cmps262-assignment5-api-part2.onrender.com/api/v1/inventory', {
+        fetch('http://localhost:8003/api/v1/inventory', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -21,5 +21,6 @@ formEl.addEventListener('submit', event => {
     }).then(res => res.json())
       .then(data => console.log(data))
       .then(error => console.log(error))
+      window.alert("Inventory Updated");
     }
 });

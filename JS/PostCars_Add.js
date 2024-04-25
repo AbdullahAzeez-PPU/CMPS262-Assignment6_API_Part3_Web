@@ -8,7 +8,7 @@ formEl.addEventListener('submit', event => {
         $.toaster({ priority : 'danger', title : 'Error Message', message : "Oops something went wrong"});
 
     } else {
-        fetch('https://cmps262-assignment5-api-part2.onrender.com/api/v1/inventory', {
+        fetch('http://localhost:8003/api/v1/inventory', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -17,6 +17,6 @@ formEl.addEventListener('submit', event => {
         }).then(res => res.json())
           .then(data => console.log(data))
           .then(error => console.log(error))
-          $.toaster({ priority : 'success', title : 'Iventory', message : "Omar has added an item"});
+          window.alert("New Inventory Addedd");
     }
 });
