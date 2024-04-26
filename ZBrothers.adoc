@@ -10,3 +10,5 @@ VS Code
 
 ## What programming languages were utilized
 HTML, CSS, JQuery, JavaScript
+
+image::/images/diagram.png[alt=logo,width=700px][orientation=portrait]
