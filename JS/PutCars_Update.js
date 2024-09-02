@@ -12,7 +12,7 @@ formEl.addEventListener('submit', event => {
         window.alert("Error Message");
     }
     else {
-        fetch('https://inventory-w00m.onrender.com/api/v1/inventory/', {
+        fetch('https://inventory-gxpp.onrender.com/api/v1/inventory/', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'

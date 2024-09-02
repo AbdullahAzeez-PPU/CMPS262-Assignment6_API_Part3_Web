@@ -8,7 +8,7 @@ formEl.addEventListener('submit', event => {
         $.toaster({ priority : 'danger', title : 'Error Message', message : "Oops something went wrong"});
 
     } else {
-        fetch('https://inventory-w00m.onrender.com/api/v1/inventory/', {
+        fetch('https://inventory-gxpp.onrender.com/api/v1/inventory/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
